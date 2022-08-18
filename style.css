@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
 body {
   margin: 0;
 }
@@ -26,7 +27,7 @@ header {
   font-weight: 700;
   line-height: 2rem;
   color: #6070ff;
-  font-family: "poppins",Arial, Helvetica, sans-serif;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
 }
 
 .menu {
@@ -38,15 +39,19 @@ header {
 .connect {
   margin-left: 24px;
   width: 45.37%;
-  font-family: 'Poppins',Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
-h1,p {
+p {
+  margin: 0;
+}
+
+h1 {
   margin: 0;
 }
 
@@ -67,16 +72,16 @@ h1,p {
 }
 
 .primary {
-  font-family: "poppins",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 3.6rem;
   line-height: 5.2rem;
   color: #172b4d;
 }
 
 .supporting {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  line-height: 2.4rem;    
+  line-height: 2.4rem;
   color: #344563;
 }
 
