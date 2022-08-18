@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 body {
   margin: 0;
+}
+
+main {
+  width: 375px;
 }
 
 html {
@@ -12,19 +16,74 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 max(10px,2%);
   min-height: 48px;
+  width: 100%;
 }
 
+
 .logo {
+  margin-left: 24px;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2rem;
   color: #6070ff;
-  font-family: poppins;
+  font-family: "poppins";
 }
 
 .menu {
+  margin-right: 24px;
   min-width: 18px;
   min-height: 12px;
+}
+
+.connect {
+    margin-left: 24px;
+    width: 45.37%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #7F8CFF;
+}
+
+h1,p {
+  margin: 0;
+}
+
+.headline {
+  background-image: url(./images/header-shapes\ mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 9.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.text {
+  width: 87.2%;
+  margin-left: 24px;
+}
+
+.primary {
+    font-family: "poppins";
+    font-size: 3.6rem;
+    line-height: 5.2rem;
+    color: #172b4d;
+}
+
+
+.supporting {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    line-height: 2.4rem;    
+    color: #344563;
+}
+
+.icons {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
 }
