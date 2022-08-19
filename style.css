@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+  margin: 0;
+}
+
+main {
+  width: 375px;
+}
+
+html {
+  font-size: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mylogo {
+  margin-left: 24px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  color: #6070ff;
+}
+
+.menu {
+  margin-right: 24px;
+  min-width: 18px;
+  min-height: 12px;
+}
+
+.connect {
+  margin-left: 24px;
+  width: 45.37%;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #7f8cff;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.headline {
+  background-image: url(./images/header-shapes\ mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 9.4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.text {
+  width: 87.2%;
+  margin-left: 24px;
+}
+
+.primary {
+  font-family: "poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3.6rem;
+  line-height: 5.2rem;
+  color: #172b4d;
+}
+
+.supporting {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #344563;
+}
+
+.icons {
+  margin: 0 0 0 2.4rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
