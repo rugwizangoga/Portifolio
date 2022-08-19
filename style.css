@@ -214,11 +214,6 @@ li {
   color: #fff;
 }
 
-.see:enabled {
-  background-color: #fff;
-  border: 1px solid #7f8cff;
-}
-
 .about {
   background-color: #fff;
   border-radius: 0 8rem 0 0;
