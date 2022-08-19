@@ -7,10 +7,15 @@ body {
 
 main {
   width: 375px;
+  background-color: #e5e5e5;
 }
 
 html {
   font-size: 10px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .header {
@@ -19,6 +24,7 @@ html {
   align-items: center;
   min-height: 48px;
   width: 100%;
+  background-color: #fff;
 }
 
 a {
@@ -65,23 +71,25 @@ h2 {
 
 .headline {
   background-image: url(./images/header-shapes\ mobile.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 9.4rem 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.4rem;
+  border-radius: 0 0 0 7rem;
+  background-color: #fff;
 }
 
 .text {
-  width: 87.2%;
+  width: 80%;
   margin-left: 24px;
 }
 
 .primary {
   font-family: "poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   line-height: 5.2rem;
   color: #172b4d;
 }
@@ -98,8 +106,171 @@ h2 {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 li {
   list-style: none;
+}
+
+.works {
+  width: 100%;
+  display: grid;
+  gap: 4.4rem;
+  padding: 11.4rem 0;
+}
+
+.cards {
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.title {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #172b4d;
+}
+
+.desctext {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #172b4d;
+}
+
+.fav {
+  width: 80%;
+  margin: 0;
+}
+
+.cano {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #344563;
+}
+
+.dev {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #7a869a;
+}
+
+.tech {
+  width: 67%;
+  margin: 0;
+}
+
+.techitems {
+  padding: 0.4rem 1.2rem;
+  background: #ebebff;
+  border-radius: 0.8rem;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.see {
+  padding: 1.2rem;
+  border: 1px solid #6070ff;
+  border-radius: 0.8rem;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: #fff;
+  color: #396df2;
+}
+
+.see:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.see:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.about {
+  background-color: #fff;
+  border-radius: 0 8rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 11.4rem 0;
+}
+
+.aboutsee {
+  width: 187px;
+  margin-left: 24px;
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 0;
+  margin-left: 2.4rem;
+  width: 87.2%;
+}
+
+.lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 550;
+  line-height: 2.4rem;
+  color: #000;
+}
+
+.langue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+  padding: 0;
+  margin-top: 2.4rem;
+}
+
+.lan {
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #253858;
+  background-color: #f7f7f9;
+  padding: 0.8rem 0;
+}
+
+.lo {
+  padding-right: 2.4rem;
 }
