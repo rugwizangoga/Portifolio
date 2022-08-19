@@ -134,21 +134,21 @@ li {
 }
 
 .title {
-font-family: 'Poppins', Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 3.2rem;
-line-height: 4.4rem;
-color: #172b4d;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  color: #172b4d;
 }
 
 .desctext {
-font-family: 'Poppins', Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 1.5rem;
-line-height: 2.4rem;
-color: #172b4d;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #172b4d;
 }
 
 .fav {
@@ -171,7 +171,7 @@ color: #172b4d;
   font-weight: 600;
   font-size: 1.3rem;
   line-height: 1.6rem;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .tech {
@@ -202,6 +202,21 @@ color: #172b4d;
   font-weight: 500;
   background-color: #fff;
   color: #396df2;
+}
+
+.see:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.see:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.see:enabled {
+  background-color: #fff;
+  border: 1px solid #7f8cff;
 }
 
 .about {
