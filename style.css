@@ -292,7 +292,7 @@ li {
 }
 
 .contatcttitle {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif; 
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 4rem;
   line-height: 5.2rem;
   font-weight: 700;
@@ -301,7 +301,7 @@ li {
 }
 
 .attract {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif; 
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 400;
@@ -320,7 +320,7 @@ form {
   margin: 0 0 0 2.4rem;
 }
 
-form input, form textarea {
+.names {
   border: none;
   border-radius: 8px;
   font-size: 1.7rem;
