@@ -6,7 +6,6 @@ body {
 }
 
 main {
-  width: 375px;
   background-color: #e5e5e5;
 }
 
@@ -273,4 +272,14 @@ li {
 
 .lo {
   padding-right: 2.4rem;
+}
+
+.contactform {
+  padding: 11.4rem 0 7rem 0;
+  background-color: #6070ff;
+  background-image: url(./images/contact\ form\ shapes.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  border-radius: 8rem 0 0 0;
 }
