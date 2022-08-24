@@ -282,4 +282,57 @@ li {
   background-repeat: no-repeat;
   background-position-x: right;
   border-radius: 8rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  color: #fff;
+
+}
+.contatcttitle{
+  font-family:'Poppins', Arial, Helvetica, sans-serif; 
+  font-size: 4rem;
+  line-height: 5.2rem;
+  font-weight: 700;
+  width: 50%;
+  margin-left: 20%;
+}
+.attract{
+  font-family:'Poppins', Arial, Helvetica, sans-serif; 
+  font-size: 20px;
+  line-height:2.5rem;
+  font-weight: 400;
+  color: #EBEBff;
+  padding: 3% 5%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+form input, form textarea {
+  width: 90%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 5%;
+  font-size: 20px;
+  padding-left: 12px;
+  color: #b3bac5;
+
+}
+
+form textarea {
+height: 170px;
+margin-bottom: 24px;
+}
+form button {
+width: 30%;
+margin-left: 5%;
+
 }
