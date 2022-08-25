@@ -18,12 +18,20 @@ img {
   max-width: 100%;
 }
 
+header {
+  background-color: #fff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 48px;
-  background-color: #fff;
+  margin: 0 2.4rem;
+}
+
+.navul {
+  display: none;
 }
 
 a {
@@ -31,7 +39,6 @@ a {
 }
 
 #mylogo {
-  margin-left: 24px;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2rem;
@@ -40,7 +47,6 @@ a {
 }
 
 .menu {
-  margin-right: 24px;
   min-width: 18px;
   min-height: 12px;
 }
@@ -350,6 +356,22 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  .header {
+    margin: 0 7rem;
+  }
+  .navul {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .menu img {
+    display: none;
+  }
   .headline {
     background-image: url(./images/Header.png);
     background-size: contain;
