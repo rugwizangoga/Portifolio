@@ -6,7 +6,8 @@ body {
 }
 
 main {
-  background-color: #e5e5e5;
+  min-width: 350px;
+  background-color: #d3d3d3;
 }
 
 html {
@@ -17,13 +18,20 @@ img {
   max-width: 100%;
 }
 
+header {
+  background-color: #fff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 48px;
-  width: 100%;
-  background-color: #fff;
+  margin: 0 2.4rem;
+}
+
+.navul {
+  display: none;
 }
 
 a {
@@ -31,7 +39,6 @@ a {
 }
 
 #mylogo {
-  margin-left: 24px;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2rem;
@@ -40,14 +47,11 @@ a {
 }
 
 .menu {
-  margin-right: 24px;
   min-width: 18px;
   min-height: 12px;
 }
 
 .connect {
-  margin-left: 24px;
-  width: 45.37%;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -73,22 +77,22 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 9.4rem 0;
+  background-color: #fff;
+  border-radius: 0 0 0 7rem;
+}
+
+.head {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.4rem;
-  border-radius: 0 0 0 7rem;
-  background-color: #fff;
-}
-
-.text {
-  width: 80%;
-  margin-left: 24px;
 }
 
 .primary {
   font-family: "poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   line-height: 5.2rem;
   color: #172b4d;
 }
@@ -101,15 +105,19 @@ h2 {
 }
 
 .icons {
-  margin: 0 0 0 2.4rem;
+  width: fit-content;
   padding: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 li {
   list-style: none;
+  margin-right: 1.6rem;
+}
+
+li:last-child {
+  margin-right: 0;
 }
 
 .works {
@@ -132,6 +140,12 @@ li {
   border-radius: 16px;
 }
 
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
 .title {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -148,11 +162,6 @@ li {
   font-size: 1.5rem;
   line-height: 2.4rem;
   color: #172b4d;
-}
-
-.fav {
-  width: 80%;
-  margin: 0;
 }
 
 .cano {
@@ -173,11 +182,6 @@ li {
   color: #7a869a;
 }
 
-.tech {
-  width: 67%;
-  margin: 0;
-}
-
 .techitems {
   padding: 0.4rem 1.2rem;
   background: #ebebff;
@@ -192,6 +196,7 @@ li {
 }
 
 .see {
+  width: fit-content;
   padding: 1.2rem;
   border: 1px solid #6070ff;
   border-radius: 0.8rem;
@@ -206,6 +211,7 @@ li {
 .see:hover {
   background-color: #6070ff;
   color: #fff;
+  cursor: pointer;
 }
 
 .see:focus {
@@ -216,15 +222,22 @@ li {
 .about {
   background-color: #fff;
   border-radius: 0 8rem 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
   padding: 11.4rem 0;
 }
 
-.aboutsee {
-  width: 187px;
-  margin-left: 24px;
+.realabout {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
 }
 
 .language {
@@ -232,8 +245,10 @@ li {
   flex-direction: column;
   gap: 2.4rem;
   padding: 0;
-  margin-left: 2.4rem;
-  width: 87.2%;
+}
+
+.language li {
+  margin-right: 0;
 }
 
 .lang {
@@ -268,6 +283,7 @@ li {
   color: #253858;
   background-color: #f7f7f9;
   padding: 0.8rem 0;
+  margin-right: 0;
 }
 
 .lo {
@@ -275,6 +291,7 @@ li {
 }
 
 .contactform {
+  min-width: 350px;
   padding: 10.4rem 0 0 0;
   background-color: #6070ff;
   border-radius: 8rem 0 0 0;
@@ -285,10 +302,9 @@ li {
   justify-content: center;
   color: #fff;
   background-image: url(./images/contact\ form\ shapes.png);
-  background-size: 63%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position-x: right;
-  background-position-y: 39%;
 }
 
 .contatcttitle {
@@ -297,7 +313,6 @@ li {
   line-height: 5.2rem;
   font-weight: 700;
   width: 87.2%;
-  margin-left: 2.4rem;
 }
 
 .attract {
@@ -306,7 +321,6 @@ li {
   line-height: 2.5rem;
   font-weight: 400;
   color: #ebeffe;
-  margin: 0 0 3.4rem 2.4rem;
   padding: 0;
   width: 87.2%;
   text-align: center;
@@ -317,7 +331,6 @@ form {
   flex-direction: column;
   gap: 2.4rem;
   width: 87.2%;
-  margin: 0 0 0 2.4rem;
 }
 
 .names {
@@ -335,14 +348,126 @@ form textarea {
   height: 12rem;
 }
 
-form button {
-  width: 43%;
-}
-
 hr {
   width: 40%;
   height: 5px;
   border-radius: 1rem;
   margin-left: 32%;
   background-color: #0d151e;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    margin: 0 7rem;
+  }
+
+  .navul {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .headline {
+    background-image: url(./images/Header.png);
+    background-size: contain;
+    padding: 20rem 0;
+  }
+
+  .head {
+    width: 58%;
+  }
+
+  .heading {
+    width: 30%;
+  }
+
+  .language {
+    width: 60%;
+  }
+
+  .image {
+    width: 55%;
+  }
+
+  .two {
+    order: 2;
+  }
+
+  .four {
+    order: 2;
+  }
+
+  .desc {
+    width: 40%;
+    padding: 2rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .realabout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .lang {
+    font-weight: 500;
+  }
+
+  .lan {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .langue {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .line {
+    padding: 0 0 1rem 1rem;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  hr {
+    display: none;
+  }
+
+  form {
+    width: 65%;
+    margin: 0 auto 7rem;
+  }
+
+  form button {
+    margin: 0 auto;
+  }
+
+  .contatcttitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .attract {
+    margin: 0 auto;
+    font-weight: 400;
+  }
+
+  .contactform {
+    background-image: url(./images/contact\ form\ background\ shape.png);
+  }
 }
