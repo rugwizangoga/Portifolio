@@ -385,7 +385,7 @@ hr {
   }
 
   .heading {
-    width: 30%
+    width: 30%;
   }
 
   .language {
@@ -399,7 +399,7 @@ hr {
   .two {
     order: 2;
   }
-  
+
   .four {
     order: 2;
   }
@@ -444,7 +444,7 @@ hr {
 
   form {
     width: 65%;
-    margin: 0 auto 7rem ;
+    margin: 0 auto 7rem;
   }
 
   form button {
