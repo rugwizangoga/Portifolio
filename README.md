@@ -20,10 +20,20 @@ $ cd Portifolio
 
 Then open index.html on the bowser to run the project
 
-## 👤 Author
+## 👤 Authors
+
+IRADUKUNDA Pacific Rugwizangoga
 
 - GitHub: [@githubhandle](https://github.com/rugwizangoga)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/iradukunda-pacific-rugwizangoga)
+
+Peter CHENDI
+
+- GitHub: [@githubhandle](https://github.com/anyepeter)
+
+NGUFOR Emmanuella
+
+- GitHub: [@githubhandle](https://github.com/Ngufor-emmanuella)
 
 ## 🤝 Contributing
 

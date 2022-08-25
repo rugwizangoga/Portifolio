@@ -325,7 +325,10 @@ form {
   border-radius: 8px;
   font-size: 1.7rem;
   padding: 1.5rem;
-  color: #b3bac5;
+}
+
+.names::placeholder {
+  color: #303233;
 }
 
 form textarea {
