@@ -359,6 +359,7 @@ hr {
   .header {
     margin: 0 7rem;
   }
+
   .navul {
     display: flex;
     justify-content: space-between;
@@ -372,6 +373,7 @@ hr {
   .menu img {
     display: none;
   }
+
   .headline {
     background-image: url(./images/Header.png);
     background-size: contain;
@@ -393,7 +395,6 @@ hr {
   .image {
     width: 55%;
   }
-
 
   .two {
     order: 2;
