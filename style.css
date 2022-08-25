@@ -438,6 +438,11 @@ hr {
     justify-content: flex-start;
   }
 
+  .line {
+    padding: 0 0 1rem 1rem;
+    border-bottom: 1px solid #dfe1e6;
+  }
+
   hr {
     display: none;
   }
