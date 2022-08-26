@@ -44,6 +44,16 @@ a {
   line-height: 2rem;
   font-family: "poppins", Arial, Helvetica, sans-serif;
   color: #6070ff;
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+@keyframes slidein{
+  from{
+    transform: rotate(360deg);
+  } to{
+    transform: rotate(90deg);
+  }
 }
 
 .menu {
@@ -212,6 +222,7 @@ li:last-child {
   background-color: #6070ff;
   color: #fff;
   cursor: pointer;
+  transition: background-color 1s ease-in;
 }
 
 .see:focus {
