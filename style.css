@@ -15,9 +15,14 @@ html {
 }
 
 img {
+  max-width: 90%;
+  transition-property: max-with;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+img:hover{
   max-width: 100%;
 }
-
 header {
   background-color: #fff;
 }
@@ -406,8 +411,13 @@ hr {
 
   .image {
     width: 55%;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-delay: 2s;
   }
-
+  .image:hover{
+    width: 65%;
+  }
   .two {
     order: 2;
   }
