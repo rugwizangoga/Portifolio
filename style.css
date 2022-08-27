@@ -20,9 +20,11 @@ img {
   transition-duration: 4s;
   transition-delay: 2s;
 }
-img:hover{
+
+img:hover {
   max-width: 100%;
 }
+
 header {
   background-color: #fff;
 }
@@ -53,10 +55,12 @@ a {
   animation-duration: 3s;
 }
 
-@keyframes slidein{
-  from{
+@keyframes slidein {
+  from {
     transform: rotate(360deg);
-  } to{
+  }
+  
+  to {
     transform: rotate(90deg);
   }
 }
@@ -415,9 +419,11 @@ hr {
     transition-duration: 3s;
     transition-delay: 2s;
   }
-  .image:hover{
+
+  .image:hover {
     width: 65%;
   }
+  
   .two {
     order: 2;
   }
