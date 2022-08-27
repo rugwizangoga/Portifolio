@@ -59,7 +59,7 @@ a {
   from {
     transform: rotate(360deg);
   }
-  
+
   to {
     transform: rotate(90deg);
   }
@@ -423,7 +423,7 @@ hr {
   .image:hover {
     width: 65%;
   }
-  
+
   .two {
     order: 2;
   }
