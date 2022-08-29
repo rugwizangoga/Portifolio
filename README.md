@@ -12,6 +12,10 @@ portifolio project is a website that highlights my achievements, past experience
 - CSS
 - Linters
 
+## Live Demo
+
+[Live Demo Link](https://rugwizangoga.github.io/Portifolio/)
+
 ## Getting Started
 
 $ git clone git@github.com:rugwizangoga/Portifolio.git
@@ -20,12 +24,14 @@ $ cd Portifolio
 
 Then open index.html on the bowser to run the project
 
-## 👤 Authors
+## 👤 Author
 
 IRADUKUNDA Pacific Rugwizangoga
 
 - GitHub: [@githubhandle](https://github.com/rugwizangoga)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/iradukunda-pacific-rugwizangoga)
+
+## 🤝 Contributors
 
 Peter CHENDI
 
@@ -34,8 +40,6 @@ Peter CHENDI
 NGUFOR Emmanuella
 
 - GitHub: [@githubhandle](https://github.com/Ngufor-emmanuella)
-
-## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
