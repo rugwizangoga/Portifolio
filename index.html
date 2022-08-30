@@ -8,20 +8,20 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <header>
+        <nav class="header">
+            <a id="mylogo" href="./index.html">My Logo</a>
+            <div class="menu">
+                <ul class="navul">
+                    <li><a href="./index.html">portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <img src="./images/Union.png" alt="menu">
+            </div>
+        </nav>
+    </header>
     <main>
-        <header>
-            <nav class="header">
-                <a id="mylogo" href="./index.html">My Logo</a>
-                <div class="menu">
-                    <ul class="navul">
-                        <li><a href="./index.html">portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                    <img src="./images/Union.png" alt="menu">
-                </div>
-            </nav>
-        </header>
         <section class="headline">
             <div class="head">
                 <h1 class="primary">
@@ -52,7 +52,7 @@
                         <a href="https://github.com/rugwizangoga"><img src="./images/github.svg" alt="github"></a>
                     </li>
                     <li>
-                        <a href=""><img src="./images/v.svg" alt="v"></a>
+                        <a href=""><img src="./images/v.svg" alt="Angelistic"></a>
                     </li>
                 </ul>
             </div>
@@ -180,7 +180,7 @@
                             <a href="https://github.com/rugwizangoga"><img src="./images/github.svg" alt="github"></a>
                         </li>
                         <li>
-                            <a href=""><img src="./images/v.svg" alt="v"></a>
+                            <a href=""><img src="./images/v.svg" alt="Angelistic"></a>
                         </li>
                     </ul>
                     <button type="button" class="see aboutsee">Get my resume</button>
@@ -224,13 +224,17 @@
                 coding. I’d love to help with it 
             </p>
             <form action="https://formspree.io/f/mgedjjon" method="post">
+                <label for="names">Names</label>
                 <input type="text" placeholder="Full name" maxlength="30" class="names" name="name" required>
+                <label for="Email">Email</label>
                 <input type="email" placeholder="Email address" class="names" name="email" required>
+                <label for="textarea">Text area</label>
                 <textarea id="comment" placeholder="Write your message here" class="names" rows="5" maxlength="500" name="message" required></textarea>
+                <label for="button">Button</label>
                 <button type="submit" class="see">Get in Touch</button>
             </form>
         </div>
         <hr>
-        </footer>
+    </footer>
 </body>
 </html>
