@@ -23,6 +23,7 @@ img {
 
 img:hover {
   max-width: 100%;
+  cursor: pointer;
 }
 
 header {
@@ -47,6 +48,10 @@ label {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 #mylogo {
