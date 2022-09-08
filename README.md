@@ -41,6 +41,10 @@ NGUFOR Emmanuella
 
 - GitHub: [@githubhandle](https://github.com/Ngufor-emmanuella)
 
+OLUSOLA Olugboye
+
+- GitHub: [@githubhandle](https://github.com/Adetunbosun)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/)
