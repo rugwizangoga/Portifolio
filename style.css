@@ -92,15 +92,15 @@ label {
 }
 
 .main.active p {
-  filter: blur(16px);
+  filter: blur(8px);
 } 
 
 .main.active h2 {
-  filter: blur(16px);
+  filter: blur(8px);
 } 
 
 .main.active h1 {
-  filter: blur(16px);
+  filter: blur(8px);
 } 
 
 .navul.active {
