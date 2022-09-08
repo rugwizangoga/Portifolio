@@ -79,6 +79,21 @@ label {
   margin: 16px 0;
 }
 
+.navul.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(96, 112, 255,0.9);
+  position: fixed;
+  left: 0;
+  top: -40px;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  font-weight: 600;
+  padding: 50px 0 0 24px;
+}
+
 .hamburger.active .bar:first-child {
   transform: translateY(8px) rotate(45deg);
   background-color: #fff;
