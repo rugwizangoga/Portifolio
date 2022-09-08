@@ -21,6 +21,18 @@ img {
   transition-delay: 2s;
 }
 
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -93,15 +105,15 @@ label {
 
 .main.active p {
   filter: blur(8px);
-} 
+}
 
 .main.active h2 {
   filter: blur(8px);
-} 
+}
 
 .main.active h1 {
   filter: blur(8px);
-} 
+}
 
 .navul.active {
   display: flex;
@@ -164,18 +176,6 @@ label {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #7f8cff;
-}
-
-p {
-  margin: 0;
-}
-
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
 }
 
 .headline {
