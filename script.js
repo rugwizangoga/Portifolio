@@ -7,3 +7,9 @@ hamburger.addEventListener("click",()=>{
     navul.classList.toggle("active");
     header.classList.toggle("active");
 })
+
+document.querySelectorAll(".navitem").forEach(n=>n.addEventListener("click",()=>{
+    hamburger.classList.remove("active");
+    navul.classList.remove("active");
+    header.classList.remove("active");
+}))
