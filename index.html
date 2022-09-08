@@ -8,23 +8,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portifolio</title>
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header class="heada">
         <nav class="header">
             <a id="mylogo" href="./index.html">My Logo</a>
             <div class="menu">
                 <ul class="navul">
-                    <li><a href="./index.html">portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="navitem"><a href="#portifolio">portfolio</a></li>
+                    <li class="navitem"><a href="#aboutus">About</a></li>
+                    <li class="navitem"><a href="#contact">contact</a></li>
                 </ul>
-                <img src="./images/Union.png" alt="menu">
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main">
         <section class="headline">
             <div class="head">
                 <h1 class="primary">
@@ -61,7 +66,7 @@
             </div>
         </section>
 
-        <section class="works">
+        <section id="portifolio" class="works">
             <div class="cards">
                 <div class="image">
                     <img src="./images/over.png" alt="image">
@@ -153,7 +158,7 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="aboutus" class="about">
             <div class="realabout">
                 <div class="heading">
                     <h2 class="primary">
@@ -215,7 +220,7 @@
             </div>
         </section>
     </main>
-    <footer class="contactform">
+    <footer id="contact" class="contactform">
         <div class="head">
             <h2 class="contatcttitle">
                 Contact me
@@ -239,5 +244,7 @@
         </div>
         <hr>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

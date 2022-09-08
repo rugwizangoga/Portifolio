@@ -5,8 +5,8 @@ body {
   margin: 0;
 }
 
-main {
-  min-width: 350px;
+.main {
+  min-width: 320px;
   background-color: #e5e8eb;
 }
 
@@ -21,12 +21,40 @@ img {
   transition-delay: 2s;
 }
 
-img:hover {
-  max-width: 100%;
+p {
+  margin: 0;
 }
 
-header {
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img:hover {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.heada {
+  min-width: 320px;
   background-color: #fff;
+  position: sticky;
+  top: 0;
 }
 
 .header {
@@ -41,12 +69,79 @@ label {
   display: none;
 }
 
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #6070ff;
+}
+
+.bar:first-child {
+  margin-top: 0;
+}
+
+.bar:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
 .navul {
   display: none;
 }
 
-a {
-  text-decoration: none;
+.navul a {
+  color: #fff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.navitem {
+  margin: 16px 0;
+}
+
+.main.active p {
+  filter: blur(8px);
+}
+
+.main.active h2 {
+  filter: blur(8px);
+}
+
+.main.active h1 {
+  filter: blur(8px);
+}
+
+.navul.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #6070ff;
+  position: fixed;
+  left: 0;
+  top: -40px;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  font-weight: 600;
+  padding: 50px 0 0 24px;
+}
+
+.hamburger.active .bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
 }
 
 #mylogo {
@@ -81,18 +176,6 @@ a {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #7f8cff;
-}
-
-p {
-  margin: 0;
-}
-
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
 }
 
 .headline {
@@ -320,7 +403,7 @@ li:last-child {
 }
 
 .contactform {
-  min-width: 350px;
+  min-width: 320px;
   padding: 10.4rem 0 0 0;
   background-color: #6070ff;
   border-radius: 8rem 0 0 0;
@@ -392,15 +475,20 @@ hr {
 
   .navul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 500;
-    color: #344563;
+    margin: 0;
+    padding-top: 0;
+    background-color: #fff;
   }
 
-  .menu img {
+  .navul a {
+    color: #6070ff;
+    padding-right: 24px;
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
     display: none;
   }
 
