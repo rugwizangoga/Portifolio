@@ -6,7 +6,7 @@ body {
 }
 
 main {
-  min-width: 350px;
+  min-width: 320px;
   background-color: #e5e8eb;
 }
 
@@ -26,8 +26,11 @@ img:hover {
   cursor: pointer;
 }
 
-header {
+.heada {
+  min-width: 320px;
   background-color: #fff;
+  position: sticky;
+  top: 0;
 }
 
 .header {
@@ -42,11 +45,59 @@ label {
   display: none;
 }
 
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #6070ff;
+}
+
+.bar:first-child {
+  margin-top: 0;
+}
+
+.bar:last-child {
+  margin-bottom: 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
 .navul {
   display: none;
 }
 
+.navul a {
+  color: #fff;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+.navitem {
+  margin: 16px 0;
+}
+
+.hamburger.active .bar:first-child {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
 a {
+  text-decoration: none;
+}
+
+a:visited {
   text-decoration: none;
 }
 
@@ -325,7 +376,7 @@ li:last-child {
 }
 
 .contactform {
-  min-width: 350px;
+  min-width: 320px;
   padding: 10.4rem 0 0 0;
   background-color: #6070ff;
   border-radius: 8rem 0 0 0;
@@ -397,15 +448,20 @@ hr {
 
   .navul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 500;
-    color: #344563;
+    margin: 0;
+    padding-top: 0;
+    background-color: #fff;
   }
 
-  .menu img {
+  .navul a {
+    color: #6070ff;
+    padding-right: 24px;
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
     display: none;
   }
 
