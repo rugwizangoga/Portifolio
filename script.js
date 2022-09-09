@@ -82,7 +82,7 @@ let projects = [
      },
     image: './images/last.png'}
 ];
-
+let count =1;
 projects.forEach((project) => {
   const newdiv = document.createElement('div');
   if(project.id === 'proj1'){
@@ -136,7 +136,13 @@ projects.forEach((project) => {
     </div>
   </div>`;
   }
-  
   works.append(newdiv);
 });
-;
+
+const image = document.querySelectorAll('.image');
+image.forEach((im) =>{
+  if (count%2 === 0){
+    im.classList.add('two');
+  }
+  count++;
+});
