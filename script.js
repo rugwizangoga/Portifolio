@@ -189,6 +189,8 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
   });
 }));
 
+
+
 const intouch = document.getElementById('intouch');
 
 intouch.addEventListener("click", () =>{
