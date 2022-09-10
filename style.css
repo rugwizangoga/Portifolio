@@ -520,6 +520,20 @@ li:last-child {
   background-position-x: right;
 }
 
+.small {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: red;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+#intouch {
+  margin: 0;
+}
+
 .contatcttitle {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-size: 4rem;
