@@ -189,7 +189,12 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
   });
 }));
 
-
+if (window.localStorage.getItem("formdata") !== null){
+    const formdata = JSON.parse(window.localStorage.getItem("formdata"));
+    document.forms[0].elements[0].value = formdata.yourname;
+    document.forms[0].elements[1].value = formdata.youremail;
+    document.forms[0].elements[2].value = formdata.yourmessage;
+  }
 
 const intouch = document.getElementById('intouch');
 
