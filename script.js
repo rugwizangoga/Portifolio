@@ -189,33 +189,33 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
   });
 }));
 
-if (window.localStorage.getItem("formdata") !== null){
-    const formdata = JSON.parse(window.localStorage.getItem("formdata"));
-    document.forms[0].elements[0].value = formdata.yourname;
-    document.forms[0].elements[1].value = formdata.youremail;
-    document.forms[0].elements[2].value = formdata.yourmessage;
-  }
+if (window.localStorage.getItem('formdata') !== null) {
+  const formdata = JSON.parse(window.localStorage.getItem('formdata'));
+  document.forms[0].elements[0].value = formdata.yourname;
+  document.forms[0].elements[1].value = formdata.youremail;
+  document.forms[0].elements[2].value = formdata.yourmessage;
+}
 
 const intouch = document.getElementById('intouch');
 
-intouch.addEventListener("click", () =>{
-  let fullname = document.forms[0].elements[0].value;
-  let email = document.forms[0].elements[1].value;
-  let message = document.forms[0].elements[2].value;
-  let small = document.getElementById('small');
-  if (email.toLowerCase() !== email){
+intouch.addEventListener('click', () => {
+  const fullname = document.forms[0].elements[0].value;
+  const email = document.forms[0].elements[1].value;
+  const message = document.forms[0].elements[2].value;
+  const small = document.getElementById('small');
+  if (email.toLowerCase() !== email) {
     small.innerText = 'Enter your email in lower case letters';
     document.forms[0].addEventListener('submit', (event) => {
-      event.preventDefault();});
-  }
-  else {
+      event.preventDefault();
+    });
+  } else {
     const formdata = {
       yourname: fullname,
       youremail: email,
-      yourmessage: message
-    }
+      yourmessage: message,
+    };
 
-    window.localStorage.setItem("formdata", JSON.stringify(formdata));
+    window.localStorage.setItem('formdata', JSON.stringify(formdata));
 
     document.forms[0].submit();
   }
