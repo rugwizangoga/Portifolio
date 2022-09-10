@@ -188,3 +188,12 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
     overlay.classList.remove('active');
   });
 }));
+
+const intouch = document.getElementById('intouch');
+
+intouch.addEventListener("click", () =>{
+  
+  else {
+    document.forms[0].submit();
+  }
+});
