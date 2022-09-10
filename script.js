@@ -191,15 +191,25 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
 
 const intouch = document.getElementById('intouch');
 
-intouch.addEventListener('click', () => {
-  const fullname = document.forms[0].elements[1].value;
-  const small = document.getElementById('small');
-  if (fullname.toLowerCase() !== fullname) {
+intouch.addEventListener("click", () =>{
+  let fullname = document.forms[0].elements[0].value;
+  let email = document.forms[0].elements[1].value;
+  let message = document.forms[0].elements[2].value;
+  let small = document.getElementById('small');
+  if (email.toLowerCase() !== email){
     small.innerText = 'Enter your email in lower case letters';
     document.forms[0].addEventListener('submit', (event) => {
-      event.preventDefault();
-    });
-  } else {
+      event.preventDefault();});
+  }
+  else {
+    const formdata = {
+      yourname: fullname,
+      youremail: email,
+      yourmessage: message
+    }
+
+    window.localStorage.setItem("formdata", JSON.stringify(formdata));
+
     document.forms[0].submit();
   }
 });
