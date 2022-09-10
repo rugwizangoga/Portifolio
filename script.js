@@ -29,6 +29,8 @@ const projects = [
       tech3: 'javaScript',
     },
     image: './images/over.png',
+    live: 'https://rugwizangoga.github.io/Portifolio/',
+    source: 'https://github.com/rugwizangoga/Portifolio.git'
   },
 
   {
@@ -44,6 +46,8 @@ const projects = [
       tech3: 'javaScript',
     },
     image: './images/newcard.png',
+    live: 'https://rugwizangoga.github.io/Portifolio/',
+    source: 'https://github.com/rugwizangoga/Portifolio.git'
   },
 
   {
@@ -60,6 +64,8 @@ const projects = [
       tech3: 'javaScript',
     },
     image: './images/backcard.png',
+    live: 'https://rugwizangoga.github.io/Portifolio/',
+    source: 'https://github.com/rugwizangoga/Portifolio.git'
   },
 
   {
@@ -76,6 +82,8 @@ const projects = [
       tech3: 'javaScript',
     },
     image: './images/last.png',
+    live: 'https://rugwizangoga.github.io/Portifolio/',
+    source: 'https://github.com/rugwizangoga/Portifolio.git'
   },
 ];
 let count = 1;
@@ -147,15 +155,27 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
             <li class="techitems">${pop.technologies.tech3}</li>
           </ul>
           <div class="btns">
-            <button type="button" class="but">See live &nbsp; &nbsp;
+            <button type="button" id="live" class="but">See live &nbsp; &nbsp;
               <img src="./images/live.png" alt="live">
             </button>
-            <button type="button" class="but">See source &nbsp; &nbsp;
+            <button type="button" id="source" class="but">See source &nbsp; &nbsp;
               <img src="./images/github.svg" alt="source">
             </button>
           </div>
       </div>
   </div>  `;
+
+  const live = document.getElementById('live');
+  const source = document.getElementById('source');
+
+  live.addEventListener('click', () => {
+   document.location.href = pop.live;
+  });
+
+  source.addEventListener('click', () => {
+    document.location.href = pop.source;
+  });
+
   overlay.classList.toggle('active');
   popup.classList.toggle('active');
   over.classList.toggle('active');
