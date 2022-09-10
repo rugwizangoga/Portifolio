@@ -146,3 +146,59 @@ image.forEach((im) =>{
   }
   count++;
 });
+
+const seeproject = document.querySelectorAll('.see');
+const overlay = document.getElementById('overlay');
+const popup = document.querySelector('.popup');
+const over = document.querySelector('.over');
+
+seeproject.forEach((p) => p.addEventListener('click', (p) => {
+  let id = p.target.id;
+  const pop = projects.find((p) => p.id === id);
+  popup.innerHTML = `
+  <div class="titles">
+    <div class="tile">
+      <h2 class="title">${pop.title}</h2>
+      <button class="close">&times;</button>
+    </div>
+    <ul class="icons fav">
+      <li class="cano">${pop.company}</li>
+      <li class="dev"><img src="./images/Counter.png" alt="dot">&nbsp; ${pop.specialization}</li>
+      <li class="dev"><img src="./images/Counter.png" alt="dot">&nbsp; ${pop.year}</li>
+    </ul>
+    </div>
+    <div class="image">
+    <img src="${pop.image}" alt="live">
+    </div>
+    <div class="explain">
+      <p class="desctext">
+        ${pop.description}
+      </p>
+      <div class="smart">
+          <ul class="tech icons">
+            <li class="techitems">${pop.technologies.tech1}</li>
+            <li class="techitems">${pop.technologies.tech2}</li>
+            <li class="techitems">${pop.technologies.tech3}</li>
+          </ul>
+          <div class="btns">
+            <button type="button" class="but">See live &nbsp; &nbsp;
+              <img src="./images/live.png" alt="live">
+            </button>
+            <button type="button" class="but">See source &nbsp; &nbsp;
+              <img src="./images/github.svg" alt="source">
+            </button>
+          </div>
+      </div>
+  </div>  `
+  overlay.classList.toggle('active');
+  popup.classList.toggle('active');
+  over.classList.toggle('active')
+
+  const close = document.querySelector('.close');
+
+  close.addEventListener('click', () => {
+    popup.classList.remove('active');
+    over.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+}));
