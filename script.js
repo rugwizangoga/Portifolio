@@ -30,7 +30,7 @@ const projects = [
     },
     image: './images/over.png',
     live: 'https://rugwizangoga.github.io/Portifolio/',
-    source: 'https://github.com/rugwizangoga/Portifolio.git'
+    source: 'https://github.com/rugwizangoga/Portifolio.git',
   },
 
   {
@@ -47,7 +47,7 @@ const projects = [
     },
     image: './images/newcard.png',
     live: 'https://rugwizangoga.github.io/Portifolio/',
-    source: 'https://github.com/rugwizangoga/Portifolio.git'
+    source: 'https://github.com/rugwizangoga/Portifolio.git',
   },
 
   {
@@ -65,7 +65,7 @@ const projects = [
     },
     image: './images/backcard.png',
     live: 'https://rugwizangoga.github.io/Portifolio/',
-    source: 'https://github.com/rugwizangoga/Portifolio.git'
+    source: 'https://github.com/rugwizangoga/Portifolio.git',
   },
 
   {
@@ -83,7 +83,7 @@ const projects = [
     },
     image: './images/last.png',
     live: 'https://rugwizangoga.github.io/Portifolio/',
-    source: 'https://github.com/rugwizangoga/Portifolio.git'
+    source: 'https://github.com/rugwizangoga/Portifolio.git',
   },
 ];
 let count = 1;
@@ -169,7 +169,7 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
   const source = document.getElementById('source');
 
   live.addEventListener('click', () => {
-   document.location.href = pop.live;
+    document.location.href = pop.live;
   });
 
   source.addEventListener('click', () => {
