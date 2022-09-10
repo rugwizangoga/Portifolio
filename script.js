@@ -129,7 +129,7 @@ const popup = document.querySelector('.popup');
 const over = document.querySelector('.over');
 
 seeproject.forEach((p) => p.addEventListener('click', (p) => {
-  const {id} = p.target;
+  const { id } = p.target;
   const pop = projects.find((p) => p.id === id);
   popup.innerHTML = `
   <div class="titles">
@@ -198,12 +198,9 @@ const formdata = {
 const fields = [...document.querySelectorAll('.names')];
 fields.forEach((n) => n.addEventListener('change', () => {
   const index = fields.indexOf(n);
-  if (index==0)
-  formdata.yourname = document.forms[0].elements[index].value;
-  else if (index == 1)
-  formdata.youremail = document.forms[0].elements[index].value;
-  else
-  formdata.yourmessage = document.forms[0].elements[index].value;
+  if (index === 0) formdata.yourname = document.forms[0].elements[index].value;
+  else if (index === 1) formdata.youremail = document.forms[0].elements[index].value;
+  else formdata.yourmessage = document.forms[0].elements[index].value;
 
   window.localStorage.setItem('formdata', JSON.stringify(formdata));
 }));
@@ -218,15 +215,14 @@ if (window.localStorage.getItem('formdata') !== null) {
 const intouch = document.getElementById('intouch');
 
 intouch.addEventListener('click', () => {
-  const email =  document.forms[0].elements[1].value;
+  const email = document.forms[0].elements[1].value;
   const small = document.getElementById('small');
   if (email.toLowerCase() !== email) {
     small.innerText = 'Enter your email in lower case letters';
     document.forms[0].addEventListener('submit', (event) => {
       event.preventDefault();
     });
-  } 
-  else {
+  } else {
     document.forms[0].submit();
   }
 });
