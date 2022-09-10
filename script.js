@@ -188,3 +188,18 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
     overlay.classList.remove('active');
   });
 }));
+
+const intouch = document.getElementById('intouch');
+
+intouch.addEventListener('click', () => {
+  const fullname = document.forms[0].elements[1].value;
+  const small = document.getElementById('small');
+  if (fullname.toLowerCase() !== fullname) {
+    small.innerText = 'Enter your email in lower case letters';
+    document.forms[0].addEventListener('submit', (event) => {
+      event.preventDefault();
+    });
+  } else {
+    document.forms[0].submit();
+  }
+});
