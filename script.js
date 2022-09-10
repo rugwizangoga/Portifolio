@@ -129,7 +129,7 @@ const popup = document.querySelector('.popup');
 const over = document.querySelector('.over');
 
 seeproject.forEach((p) => p.addEventListener('click', (p) => {
-  const { id } = p.target;
+  const {id} = p.target;
   const pop = projects.find((p) => p.id === id);
   popup.innerHTML = `
   <div class="titles">
@@ -189,6 +189,25 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
   });
 }));
 
+const formdata = {
+  yourname: '',
+  youremail: '',
+  yourmessage: '',
+};
+
+const fields = [...document.querySelectorAll('.names')];
+fields.forEach((n) => n.addEventListener('change', () => {
+  const index = fields.indexOf(n);
+  if (index==0)
+  formdata.yourname = document.forms[0].elements[index].value;
+  else if (index == 1)
+  formdata.youremail = document.forms[0].elements[index].value;
+  else
+  formdata.yourmessage = document.forms[0].elements[index].value;
+
+  window.localStorage.setItem('formdata', JSON.stringify(formdata));
+}));
+
 if (window.localStorage.getItem('formdata') !== null) {
   const formdata = JSON.parse(window.localStorage.getItem('formdata'));
   document.forms[0].elements[0].value = formdata.yourname;
@@ -199,24 +218,15 @@ if (window.localStorage.getItem('formdata') !== null) {
 const intouch = document.getElementById('intouch');
 
 intouch.addEventListener('click', () => {
-  const fullname = document.forms[0].elements[0].value;
-  const email = document.forms[0].elements[1].value;
-  const message = document.forms[0].elements[2].value;
+  const email =  document.forms[0].elements[1].value;
   const small = document.getElementById('small');
   if (email.toLowerCase() !== email) {
     small.innerText = 'Enter your email in lower case letters';
     document.forms[0].addEventListener('submit', (event) => {
       event.preventDefault();
     });
-  } else {
-    const formdata = {
-      yourname: fullname,
-      youremail: email,
-      yourmessage: message,
-    };
-
-    window.localStorage.setItem('formdata', JSON.stringify(formdata));
-
+  } 
+  else {
     document.forms[0].submit();
   }
 });
