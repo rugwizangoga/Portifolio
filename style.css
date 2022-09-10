@@ -427,6 +427,31 @@ li:last-child {
   color: #fff;
 }
 
+.me {
+  width: fit-content;
+  padding: 1.2rem;
+  border: 1px solid #6070ff;
+  border-radius: 0.8rem;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background-color: #fff;
+  color: #396df2;
+}
+
+.me:hover {
+  background-color: #6070ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 1s ease-in;
+}
+
+.me:focus {
+  background-color: #2230d2;
+  color: #fff;
+}
+
 .about {
   background-color: #fff;
   border-radius: 0 8rem 0 0;
