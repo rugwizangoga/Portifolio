@@ -189,12 +189,35 @@ seeproject.forEach((p) => p.addEventListener('click', (p) => {
   });
 }));
 
+const formdata = {
+  yourname: '',
+  youremail: '',
+  yourmessage: '',
+};
+
+const fields = [...document.querySelectorAll('.names')];
+fields.forEach((n) => n.addEventListener('change', () => {
+  const index = fields.indexOf(n);
+  if (index === 0) formdata.yourname = document.forms[0].elements[index].value;
+  else if (index === 1) formdata.youremail = document.forms[0].elements[index].value;
+  else formdata.yourmessage = document.forms[0].elements[index].value;
+
+  window.localStorage.setItem('formdata', JSON.stringify(formdata));
+}));
+
+if (window.localStorage.getItem('formdata') !== null) {
+  const formdata = JSON.parse(window.localStorage.getItem('formdata'));
+  document.forms[0].elements[0].value = formdata.yourname;
+  document.forms[0].elements[1].value = formdata.youremail;
+  document.forms[0].elements[2].value = formdata.yourmessage;
+}
+
 const intouch = document.getElementById('intouch');
 
 intouch.addEventListener('click', () => {
-  const fullname = document.forms[0].elements[1].value;
+  const email = document.forms[0].elements[1].value;
   const small = document.getElementById('small');
-  if (fullname.toLowerCase() !== fullname) {
+  if (email.toLowerCase() !== email) {
     small.innerText = 'Enter your email in lower case letters';
     document.forms[0].addEventListener('submit', (event) => {
       event.preventDefault();
